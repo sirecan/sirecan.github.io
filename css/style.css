@@ -1,0 +1,65 @@
+/* Верхняя панель */
+.top-bar {
+    background: #1f4e8c;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.top-bar i {
+    color: #9ec5ff;
+}
+
+/* Основная шапка */
+.main-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e3eef8;
+    padding: 20px 0;
+}
+
+.main-logo {
+    height: 200px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #1f4e8c !important;
+    margin-left: 20px;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+}
+
+/* Фиксированная шапка */
+.main-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Мобильная версия */
+@media (max-width: 992px) {
+
+    .top-bar {
+        display: none;
+    }
+
+    .main-logo {
+        height: 120px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+}
