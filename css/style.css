@@ -63,3 +63,10 @@
         margin: 10px 0;
     }
 }
+
+.hero-section {
+  background-image: url('images/your-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
+}
