@@ -44,7 +44,22 @@
 }
 
 /* Мобильная версия */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: 0 auto;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
 
     .top-bar {
         display: none;
@@ -63,6 +78,7 @@
         margin: 10px 0;
     }
 }
+
 
 .hero {
     position: relative;
@@ -87,9 +103,18 @@
 }
 
 .hero-content {
-    position: relative;
-    max-width: 650px;
-    z-index: 2;
+    animation: fadeUp 1s ease-out;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero h1 {
