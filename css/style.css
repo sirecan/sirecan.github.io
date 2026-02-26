@@ -36,32 +36,44 @@ footer {
 /* Верхняя шапка */
 .top-header {
     background: #ffffff;
-    padding: 30px 0;
+    padding: 25px 0;
     border-bottom: 1px solid #e3eef8;
 }
 
 .main-logo {
     height: 200px;
-    max-width: 100%;
 }
 
-/* Контакты в шапке */
+/* Контакты десктоп */
 .header-contacts {
-    gap: 30px;
-    font-weight: 500;
-    color: #1f4e8c;
+    align-items: center;
+    max-width: 500px;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 15px;
+    color: #1f4e8c;
 }
 
 .contact-item i {
-    font-size: 20px;
-    margin-right: 8px;
     color: #0d6efd;
+    margin-right: 8px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #1f4e8c;
+}
+
+/* Ограничение адреса */
+.address span {
+    display: block;
+    max-width: 320px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Адаптив */
