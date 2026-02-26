@@ -103,18 +103,9 @@
 }
 
 .hero-content {
-    animation: fadeUp 1s ease-out;
-}
-
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    position: relative;
+    max-width: 650px;
+    z-index: 2;
 }
 
 .hero h1 {
