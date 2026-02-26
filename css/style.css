@@ -44,22 +44,22 @@
 }
 
 /* Мобильная версия */
+
 @media (max-width: 768px) {
-    .hero {
-        height: 70vh;
+    .main-logo {
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .header-contacts {
+        flex-direction: column;
+        gap: 10px;
         text-align: center;
     }
+}
 
-    .hero-content {
-        margin: 0 auto;
-    }
 
-    .hero h1 {
-        font-size: 32px;
-    }
-
-    .hero p {
-        font-size: 16px;
+@media (max-width: 992px) {
 
     .top-bar {
         display: none;
