@@ -31,36 +31,46 @@
 
 <!-- Основная шапка -->
 <header class="main-header">
-  <div class="container d-flex justify-content-between align-items-center">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
 
-    <!-- Логотип -->
-    <a href="index.html">
-      <img src="images/logo200.png" class="main-logo">
-    </a>
+      <!-- Логотип -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo200.png" class="main-logo">
+      </a>
 
-  <!-- Кнопка меню -->
- 
-<div class="collapse navbar-collapse d-none d-lg-flex justify-content-end" id="navbarNav">
-<nav class="navbar-expand-lg navbar-light bg-white">
-  <ul class="nav">
-    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
-    <li class="nav-item"><a class="nav-link" href="about.html">О предприятии</a></li>
-    <li class="nav-item"><a class="nav-link" href="info.html">Раскрытие информации</a></li>
-    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-  </ul>
-</nav>
+      <!-- Кнопка мобильного меню -->
+      <button class="navbar-toggler d-lg-none" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<div class="mobile-contacts d-lg-none mt-4 pt-3 border-top">
+      <!-- Меню -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">О предприятии</a></li>
+          <li class="nav-item"><a class="nav-link" href="info.html">Раскрытие информации</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+        </ul>
+
+        <!-- Контакты только в мобильном меню -->
+        <div class="mobile-contacts d-lg-none mt-4 pt-3 border-top text-center">
           <p class="mb-2">
-              📞 <a href="tel:+70000000000">+7 (000) 000-00-00</a>
+            📞 <a href="tel:+74957833138">+7 (495) 783-31-38</a>
           </p>
           <p class="mb-0">
-              📍 Россия, МО, Котельники, мкр. Ковровый, 37
+            📍 Россия, Московская область, г. Котельники, мкр. Ковровый, д. 37
           </p>
-</div>
-</div>
-   
-  </div>
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
 </header>
 
 <section class="hero">
@@ -94,32 +104,13 @@
 </footer>
 
 <!-- Мобильные контакты -->
- 
-<div class="collapse navbar-collapse" id="navbarNav">
 
-    <ul class="navbar-nav ms-auto">
+   <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">О предприятии</a></li>
         <li class="nav-item"><a class="nav-link" href="info.html">Раскрытие информации</a></li>
         <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
     </ul>
-
-</div>
-
-<div class="overlay-menu" id="overlayMenu">
-  <div class="overlay-content">
-    <a href="index.html">Главная</a>
-    <a href="about.html">О предприятии</a>
-    <a href="info.html">Раскрытие информации</a>
-    <a href="contacts.html">Контакты</a>
-  </div>
-</div>
-
-<script>
-function openMenu() {
-    document.getElementById("overlayMenu").classList.toggle("active");
-}
-</script>  
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   
