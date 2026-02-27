@@ -13,7 +13,7 @@
 <body>
 
 <!-- Верхняя контактная панель -->
-<div class="top-bar">
+<div class="top-bar d-none d-lg-block">
   <div class="container d-flex justify-content-between align-items-center">
 
     <div class="top-left">
@@ -40,6 +40,7 @@
 
   <!-- Кнопка меню -->
  
+<div class="collapse navbar-collapse d-none d-lg-flex justify-content-end" id="navbarNav">
 <nav class="desktop-menu d-none d-lg-block">
   <ul class="nav">
     <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
@@ -49,12 +50,12 @@
   </ul>
 </nav>
 
-<button class="menu-toggle" onclick="openMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-
+<button class="navbar-toggler d-lg-none" type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+</button>
+</div>
    
   </div>
 </header>
@@ -93,21 +94,26 @@
 
 
 <!-- Мобильные контакты -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileContacts">
-  <div class="offcanvas-header">
-    <h5>Контакты</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-  </div>
+ 
+<div class="collapse navbar-collapse" id="navbarNav">
 
-  <div class="offcanvas-body">
-    <p><i class="bi bi-telephone-fill me-2"></i>
-      <a href="tel:+74957833138">+7 (495) 783-31-38</a>
-    </p>
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">О предприятии</a></li>
+        <li class="nav-item"><a class="nav-link" href="info.html">Раскрытие информации</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+    </ul>
 
-    <p><i class="bi bi-geo-alt-fill me-2"></i>
-      Россия, Московская область, г. Котельники, микрорайон Ковровый, д. 37
-    </p>
-  </div>
+    <!-- Контакты ТОЛЬКО на мобильном -->
+    <div class="mobile-contacts d-lg-none mt-4 pt-3 border-top">
+        <p class="mb-2">
+            📞 <a href="tel:+70000000000">+7 (000) 000-00-00</a>
+        </p>
+        <p class="mb-0">
+            📍 Россия, МО, Котельники, мкр. Ковровый, 37
+        </p>
+    </div>
+
 </div>
 
 <div class="overlay-menu" id="overlayMenu">
