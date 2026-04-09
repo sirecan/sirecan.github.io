@@ -1,0 +1,115 @@
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0b1a2a;
+      color: #e6edf5;
+      padding-top:80px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background:rgba(15,42,68,0.9);
+      backdrop-filter:blur(8px);
+      border-bottom:2px solid #f5a623;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #f5a623 !important;
+    }
+
+    .nav-link {
+      color:#e6edf5 !important;
+      font-weight:600;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      font-size:14px;
+      position:relative;
+    }
+
+    .nav-link:hover {
+      color: #f5a623 !important;
+    }
+
+    /* animated underline */
+    .nav-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:2px;
+    background:#f5a623;
+    transition:width .25s ease;
+    }
+
+    .nav-link:hover::after{
+    width:100%;
+    }
+
+    /* active page highlight */
+    .nav-link.active{
+    color:#f5a623 !important;
+    }
+
+    .nav-link.active::after{
+    width:100%;
+    }
+
+
+    /* HERO */
+    .hero {
+      padding: 100px 20px;
+      text-align: center;
+      background: radial-gradient(circle at center, #1a3d5f, #07121e);
+    }
+
+    .hero h1 {
+      font-weight: 700;
+      color: #f5a623;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #cfd9e6;
+    }
+
+    /* CARDS */
+    .info-card {
+      background: #12273d;
+      border: 1px solid #1f4568;
+      border-radius: 12px;
+      padding: 25px;
+      height: 100%;
+      transition: 0.25s;
+    }
+
+    .info-card:hover {
+      transform: translateY(-6px);
+      border-color: #f5a623;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    }
+
+    .info-card h3 {
+      color: #f5a623;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .info-card p {
+      color: #b8c7d9;
+      font-size: 15px;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 25px;
+      text-align: center;
+      border-top: 1px solid #1f4568;
+      color: #8fa3ba;
+      font-size: 14px;
+    }

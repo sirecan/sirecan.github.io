@@ -1,0 +1,61 @@
+/* ================= GAME LOADING SCREEN ================= */
+
+#loading-screen{
+  position:fixed;
+  inset:0;
+  background:radial-gradient(circle at center,#0e2438,#02060c);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+  flex-direction:column;
+}
+
+.loading-wrapper{
+  text-align:center;
+  max-width:420px;
+}
+
+.loading-logo{
+  width:220px;
+  margin-bottom:30px;
+  animation:engineGlow 2.2s infinite ease-in-out;
+  filter:drop-shadow(0 0 18px rgba(255,170,40,0.6));
+}
+
+.loading-title{
+  color:#f5a623;
+  font-weight:700;
+  letter-spacing:3px;
+  margin-bottom:25px;
+}
+
+.loading-bar{
+  width:100%;
+  height:14px;
+  background:#0b1a2a;
+  border:1px solid #1f4568;
+  border-radius:6px;
+  overflow:hidden;
+  margin-bottom:18px;
+}
+
+.loading-progress{
+  width:0%;
+  height:100%;
+  background:linear-gradient(90deg,#f5a623,#ffd27a);
+  box-shadow:0 0 12px rgba(255,170,40,0.8);
+  transition:width 0.25s;
+}
+
+.loading-tip{
+  font-size:14px;
+  color:#8fa3ba;
+  letter-spacing:1px;
+}
+
+@keyframes engineGlow{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.06);} 
+  100%{transform:scale(1);} 
+}
